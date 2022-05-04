@@ -1,0 +1,20 @@
+CREATE TABLE puppyworld (quantity INTEGER, item TEXT, color TEXT, size TEXT, price INTEGER);
+
+INSERT INTO puppyworld VALUES
+(3, "collar", "red", "medium", 8),
+(5, "leashes", "black", "onesize", 12),
+(3, "bows", "white", "onesize", 3),
+(10, "rainboots", "yellow", "medium", 20),
+(11, "balls", "multicolor", "onesize", 6),
+(8, "kibble", "na", "large", 25),
+(4, "kibble", "na", "onesize", 25),
+(22, "body_harness", "grey", "small", 15),
+(1, "fish_tank_round", "clear", "onesize", 17),
+(10, "fish_tank_rectangle", "clear", "onesize", 18),
+(13, "cat_house", "pink", "onesize", 30),
+(12, "cat_litter", "na", "large", 16),
+(2, "brushes", "blue", "onesize", 5),
+(4, "weewee_pad", "na", "onesize", 35);
+
+SELECT item, price FROM puppyworld ORDER BY price asc;
+SELECT SUM(quantity) FROM puppyworld WHERE price >10;
